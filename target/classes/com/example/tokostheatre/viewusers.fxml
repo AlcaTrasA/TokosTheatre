@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="598.0" prefWidth="419.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.tokostheatre.admin.ViewUsersController">
+    <children>
+        <BorderPane prefHeight="41.0" prefWidth="419.0" style="-fx-background-color: pink;">
+            <center>
+                <Label text="View User" BorderPane.alignment="CENTER">
+                    <font>
+                        <Font name="System Bold Italic" size="20.0" />
+                    </font>
+                </Label>
+            </center>
+        </BorderPane>
+        <BorderPane layoutY="557.0" prefHeight="41.0" prefWidth="419.0" style="-fx-background-color: pink;" />
+        <Button layoutX="28.0" layoutY="498.0" mnemonicParsing="false" onAction="#onGoBackClick" prefHeight="45.0" prefWidth="102.0" style="-fx-background-radius: 10; -fx-background-color: #039BE5;" text="Go Back">
+            <font>
+                <Font size="16.0" />
+            </font>
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </Button>
+      <TextField fx:id="username" layoutX="139.0" layoutY="83.0" prefHeight="25.0" prefWidth="230.0" />
+      <TextField fx:id="password" editable="false" layoutX="139.0" layoutY="123.0" prefHeight="25.0" prefWidth="230.0" />
+      <TextField fx:id="fullname" editable="false" layoutX="139.0" layoutY="164.0" prefHeight="25.0" prefWidth="230.0" />
+      <TextField fx:id="email" editable="false" layoutX="139.0" layoutY="206.0" prefHeight="25.0" prefWidth="230.0" />
+      <TextField fx:id="money" editable="false" layoutX="139.0" layoutY="249.0" prefHeight="25.0" prefWidth="230.0" />
+      <TextField fx:id="type" editable="false" layoutX="139.0" layoutY="293.0" prefHeight="25.0" prefWidth="230.0" />
+      <Label layoutX="51.0" layoutY="87.0" prefHeight="17.0" prefWidth="122.0" text="Username:" textFill="WHITE">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="51.0" layoutY="126.0" prefHeight="17.0" prefWidth="122.0" text="Password:" textFill="WHITE">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="51.0" layoutY="167.0" prefHeight="17.0" prefWidth="122.0" text="FullName:" textFill="WHITE">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="51.0" layoutY="209.0" prefHeight="17.0" prefWidth="122.0" text="Email:" textFill="WHITE">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="51.0" layoutY="252.0" prefHeight="17.0" prefWidth="122.0" text="Money:" textFill="WHITE">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="51.0" layoutY="296.0" prefHeight="17.0" prefWidth="122.0" text="Type:" textFill="WHITE">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="52.0" layoutY="349.0" text="Last Login" textFill="WHITE" />
+      <TextArea fx:id="lastLogin" editable="false" layoutX="139.0" layoutY="349.0" prefHeight="80.0" prefWidth="230.0" />
+      <Label fx:id="wrongText" layoutX="53.0" layoutY="459.0" prefHeight="17.0" prefWidth="323.0" textAlignment="CENTER" textFill="RED" />
+      <Button layoutX="289.0" layoutY="498.0" mnemonicParsing="false" onAction="#onCheckClick" prefHeight="45.0" prefWidth="102.0" style="-fx-background-radius: 10; -fx-background-color: Green;" text="Check">
+         <font>
+            <Font size="16.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <BorderPane layoutX="375.0" layoutY="85.0" prefHeight="17.0" prefWidth="15.0" style="-fx-background-color: pink; -fx-background-radius: 200;" />
+    </children>
+</AnchorPane>

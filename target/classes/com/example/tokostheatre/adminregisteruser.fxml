@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" accessibleRole="IMAGE_VIEW" prefHeight="616.0" prefWidth="459.0" style="-fx-background-color: Black;" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.tokostheatre.admin.AdminRegisterUserController">
+    <children>
+        <Label layoutX="142.0" layoutY="14.0" prefHeight="38.0" prefWidth="239.0" text="Add New User">
+            <font>
+                <Font name="Bauhaus 93" size="26.0" />
+            </font>
+            <textFill>
+                <LinearGradient cycleMethod="REFLECT" endX="1.0" endY="1.0">
+                    <stops>
+                        <Stop>
+                            <color>
+                                <Color red="0.25999999046325684" green="0.8801904916763306" blue="1.0" />
+                            </color>
+                        </Stop>
+                        <Stop offset="0.0987083777698779">
+                            <color>
+                                <Color red="0.25999999046325684" green="1.0" blue="0.8379047513008118" />
+                            </color>
+                        </Stop>
+                        <Stop offset="0.2198127740253583">
+                            <color>
+                                <Color red="0.10011428594589233" green="0.9599999785423279" blue="0.04800000041723251" opacity="0.949999988079071" />
+                            </color>
+                        </Stop>
+                        <Stop offset="0.31097560975609756">
+                            <color>
+                                <Color red="0.3799999952316284" green="1.0" blue="0.4744761884212494" />
+                            </color>
+                        </Stop>
+                        <Stop offset="0.3973219575779117">
+                            <color>
+                                <Color green="1.0" blue="0.9904761910438538" />
+                            </color>
+                        </Stop>
+                        <Stop offset="0.5012442232492001">
+                            <color>
+                                <Color red="0.3700000047683716" green="0.8619999885559082" blue="1.0" />
+                            </color>
+                        </Stop>
+                        <Stop offset="0.6128048780487805">
+                            <color>
+                                <Color red="0.3799999952316284" green="1.0" blue="0.40361905097961426" />
+                            </color>
+                        </Stop>
+                        <Stop offset="0.6676829268292682">
+                            <color>
+                                <Color red="0.3799999952316284" green="1.0" blue="0.616190493106842" />
+                            </color>
+                        </Stop>
+                        <Stop offset="0.8200813682505825">
+                            <color>
+                                <Color red="0.04100000113248825" green="0.6345238089561462" blue="0.8199999928474426" />
+                            </color>
+                        </Stop>
+                        <Stop offset="0.9246406571386231">
+                            <color>
+                                <Color red="0.009999999776482582" green="0.7642857432365417" blue="1.0" />
+                            </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                            <color>
+                                <Color red="0.009999999776482582" green="1.0" blue="0.2174285650253296" />
+                            </color>
+                        </Stop>
+                    </stops>
+                </LinearGradient>
+            </textFill>
+        </Label>
+        <AnchorPane layoutY="68.0" prefHeight="505.0" prefWidth="466.0" style="-fx-background-color: cyan;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+            <children>
+                <Label layoutX="69.0" layoutY="30.0" prefHeight="17.0" prefWidth="185.0" text="Username">
+                    <font>
+                        <Font name="System Bold Italic" size="16.0" />
+                    </font>
+                </Label>
+                <Label layoutX="69.0" layoutY="97.0" prefHeight="17.0" prefWidth="185.0" text="Full Name">
+                    <font>
+                        <Font name="System Bold Italic" size="16.0" />
+                    </font>
+                </Label>
+                <TextField fx:id="usernameText" layoutX="69.0" layoutY="55.0" prefHeight="26.0" prefWidth="333.0" />
+                <TextField fx:id="fullNameText" layoutX="69.0" layoutY="122.0" prefHeight="26.0" prefWidth="333.0" />
+                <Label layoutX="69.0" layoutY="164.0" prefHeight="17.0" prefWidth="185.0" text="Email">
+                    <font>
+                        <Font name="System Bold Italic" size="16.0" />
+                    </font>
+                </Label>
+                <TextField fx:id="emailText" layoutX="69.0" layoutY="189.0" prefHeight="26.0" prefWidth="333.0" />
+                <Label layoutX="69.0" layoutY="228.0" prefHeight="17.0" prefWidth="185.0" text="Password">
+                    <font>
+                        <Font name="System Bold Italic" size="16.0" />
+                    </font>
+                </Label>
+                <TextField fx:id="passwordText" layoutX="69.0" layoutY="253.0" prefHeight="26.0" prefWidth="333.0" />
+                <Label layoutX="70.0" layoutY="292.0" prefHeight="17.0" prefWidth="185.0" text="Repeat Password">
+                    <font>
+                        <Font name="System Bold Italic" size="16.0" />
+                    </font>
+                </Label>
+                <TextField fx:id="repeatPasswordText" layoutX="69.0" layoutY="317.0" prefHeight="26.0" prefWidth="333.0" />
+                <Button alignment="CENTER" layoutX="54.0" layoutY="397.0" mnemonicParsing="false" onAction="#onGoBackClick" prefHeight="66.0" prefWidth="147.0" style="-fx-background-color: Blue; -fx-background-radius: 50;" styleClass="-fx-background-radius" text="Go Back" textFill="WHITE">
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+                    <font>
+                        <Font size="19.0" />
+                    </font>
+                </Button>
+                <Button alignment="CENTER" layoutX="254.0" layoutY="397.0" mnemonicParsing="false" onAction="#onRegisterClick" prefHeight="66.0" prefWidth="147.0" style="-fx-background-color: Green; -fx-background-radius: 50;" styleClass="-fx-background-radius" text="Register" textFill="WHITE">
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+                    <font>
+                        <Font name="System Bold" size="19.0" />
+                    </font>
+                </Button>
+                <Label fx:id="wrongText" layoutX="85.0" layoutY="352.0" prefHeight="21.0" prefWidth="314.0" textFill="RED">
+                    <font>
+                        <Font name="System Italic" size="15.0" />
+                    </font>
+                </Label>
+                <Label fx:id="correctText" layoutX="64.0" layoutY="352.0" prefHeight="21.0" prefWidth="276.0" textFill="BLUE">
+                    <font>
+                        <Font name="System Bold Italic" size="15.0" />
+                    </font>
+                </Label>
+            </children>
+        </AnchorPane>
+        <Label layoutX="86.0" layoutY="579.0" prefHeight="17.0" prefWidth="380.0" text="Official Verified Application - tokotheatresupport@gmail.com" textFill="#dddddd">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font>
+        </Label>
+    </children>
+</AnchorPane>

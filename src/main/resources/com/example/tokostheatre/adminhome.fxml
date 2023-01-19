@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="496.0" prefWidth="642.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.tokostheatre.admin.AdminHomeController">
+    <children>
+        <BorderPane prefHeight="49.0" prefWidth="652.0" style="-fx-background-color: Red;">
+            <center>
+                <Label text="ADMIN" textFill="WHITE" BorderPane.alignment="CENTER">
+                    <font>
+                        <Font name="System Bold" size="27.0" />
+                    </font>
+                </Label>
+            </center>
+        </BorderPane>
+        <BorderPane layoutY="447.0" prefHeight="49.0" prefWidth="652.0" style="-fx-background-color: Red;" />
+        <BorderPane layoutX="625.0" layoutY="51.0" prefHeight="393.0" prefWidth="27.0" style="-fx-background-color: Red;" />
+        <Button layoutX="14.0" layoutY="323.0" mnemonicParsing="false" onAction="#onViewUsersClick" prefHeight="36.0" prefWidth="112.0" style="-fx-background-radius: 200; -fx-background-color: #009688;" text="View Users">
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor></Button>
+        <Button layoutX="532.0" layoutY="369.0" mnemonicParsing="false" onAction="#onLogoutClick" prefHeight="66.0" prefWidth="82.0" style="-fx-background-radius: 20; -fx-background-color: #F4511E;" text="Log Out">
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor></Button>
+      <Button layoutX="14.0" layoutY="69.0" mnemonicParsing="false" onAction="#onAddNewAdminClick" prefHeight="36.0" prefWidth="112.0" style="-fx-background-radius: 200; -fx-background-color: #FF9800;" text="Add New Admin">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="14.0" layoutY="273.0" mnemonicParsing="false" onAction="#onAddNewAlertClick" prefHeight="36.0" prefWidth="112.0" style="-fx-background-radius: 200; -fx-background-color: #FF5722;" text="Add New Alert">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="14.0" layoutY="122.0" mnemonicParsing="false" onAction="#onAddNewUserClick" prefHeight="36.0" prefWidth="112.0" style="-fx-background-radius: 200; -fx-background-color: #FDD835;" text="Add New User">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="14.0" layoutY="173.0" mnemonicParsing="false" onAction="#onEditUserClick" prefHeight="36.0" prefWidth="112.0" style="-fx-background-radius: 200; -fx-background-color: #43A047;" text="Edit User">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="502.0" layoutY="69.0" mnemonicParsing="false" onAction="#onEditYourProfileClick" prefHeight="36.0" prefWidth="112.0" style="-fx-background-radius: 200; -fx-background-color: cyan;" text="Edit Your Profile">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="502.0" layoutY="122.0" mnemonicParsing="false" onAction="#onClearUsersClick" prefHeight="36.0" prefWidth="112.0" style="-fx-background-radius: 200; -fx-background-color: #FF5722;" text="Clear Users">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Label fx:id="welcomeText" layoutX="152.0" layoutY="93.0" prefHeight="65.0" prefWidth="314.0" text="Hello" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <Button layoutX="170.0" layoutY="273.0" mnemonicParsing="false" onAction="#onAddNewMovieClick" prefHeight="36.0" prefWidth="112.0" style="-fx-background-radius: 200; -fx-background-color: #FF9800;" text="Add New Movie">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="170.0" layoutY="323.0" mnemonicParsing="false" onAction="#onDeleteMovieClick" prefHeight="36.0" prefWidth="112.0" style="-fx-background-radius: 200; -fx-background-color: #FDD835;" text="Delete Movie">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="170.0" layoutY="373.0" mnemonicParsing="false" onAction="#onEditMovieClick" prefHeight="36.0" prefWidth="112.0" style="-fx-background-radius: 200; -fx-background-color: #43A047;" text="Edit Movie">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="14.0" layoutY="223.0" mnemonicParsing="false" onAction="#onDeleteUserClick" prefHeight="36.0" prefWidth="112.0" style="-fx-background-radius: 200; -fx-background-color: #1B5E20;" text="Delete User">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="14.0" layoutY="373.0" mnemonicParsing="false" onAction="#onTruncateClick" prefHeight="36.0" prefWidth="112.0" style="-fx-background-radius: 200; -fx-background-color: White;" text="Truncate">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+    </children>
+</AnchorPane>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="327.0" prefWidth="419.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.tokostheatre.admin.DeleteUserController">
+    <children>
+        <BorderPane prefHeight="41.0" prefWidth="419.0" style="-fx-background-color: orange;">
+            <center>
+                <Label text="Delete User" BorderPane.alignment="CENTER">
+                    <font>
+                        <Font name="System Bold Italic" size="20.0" />
+                    </font>
+                </Label>
+            </center>
+        </BorderPane>
+        <BorderPane layoutY="288.0" prefHeight="41.0" prefWidth="419.0" style="-fx-background-color: orange;" />
+        <Button layoutX="33.0" layoutY="205.0" mnemonicParsing="false" onAction="#onGoBackClick" prefHeight="45.0" prefWidth="102.0" style="-fx-background-radius: 10; -fx-background-color: #039BE5;" text="Go Back">
+            <font>
+                <Font size="16.0" />
+            </font>
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </Button>
+        <Button layoutX="285.0" layoutY="205.0" mnemonicParsing="false" onAction="#onDeleteUserClick" prefHeight="45.0" prefWidth="102.0" style="-fx-background-radius: 10; -fx-background-color: red;" text="Delete User">
+            <font>
+                <Font size="14.0" />
+            </font>
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </Button>
+      <Label layoutX="75.0" layoutY="91.0" text="Username:" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="username" layoutX="187.0" layoutY="89.0" promptText="Input Username Here" />
+      <Label fx:id="correctText" layoutX="93.0" layoutY="165.0" prefHeight="17.0" prefWidth="237.0" textFill="#00ff04" />
+      <Label fx:id="wrongText" layoutX="93.0" layoutY="165.0" prefHeight="17.0" prefWidth="237.0" textFill="RED" />
+    </children>
+</AnchorPane>

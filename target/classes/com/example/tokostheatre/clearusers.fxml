@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="417.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.tokostheatre.admin.ClearUsersController">
+   <children>
+      <BorderPane prefHeight="41.0" prefWidth="419.0" style="-fx-background-color: red;">
+         <center>
+            <Label text="Clear Users" BorderPane.alignment="CENTER">
+               <font>
+                  <Font name="System Bold Italic" size="20.0" />
+               </font>
+            </Label>
+         </center>
+      </BorderPane>
+      <BorderPane layoutY="359.0" prefHeight="41.0" prefWidth="419.0" style="-fx-background-color: red;" />
+      <Label layoutX="114.0" layoutY="99.0" text="Are you sure?" textFill="RED">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Label>
+      <Button layoutX="38.0" layoutY="260.0" mnemonicParsing="false" onAction="#onGoBackClick" prefHeight="45.0" prefWidth="102.0" style="-fx-background-radius: 10; -fx-background-color: #039BE5;" text="Go Back">
+         <font>
+            <Font size="16.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="277.0" layoutY="260.0" mnemonicParsing="false" onAction="#onDeleteUsersClick" prefHeight="45.0" prefWidth="102.0" style="-fx-background-radius: 10; -fx-background-color: #E91E63;" text="Delete Users">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Label layoutX="89.0" layoutY="225.0" prefHeight="17.0" prefWidth="289.0" text="After Deleting users, there's no coming back!" textFill="#ff6969" wrapText="true" />
+   </children>
+</AnchorPane>
